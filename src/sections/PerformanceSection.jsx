@@ -5,110 +5,97 @@ import IconExtLink from '../components/IconExtLink';
 import SectionContainer from '../components/SectionContainer';
 import SectionHeader from '../components/SectionHeader';
 import WhiteBox from '../components/WhiteBox';
-import jissekiCompare from '../images/jisseki-compare.png';
-import jissekiNote from '../images/jisseki-note.png';
-import jissekiRebalancer from '../images/jisseki-rebalancer.jpg';
-import jissekiTravelrPng from '../images/jisseki-travelr.png';
-import jissekiWarikanPng from '../images/jisseki-warikan.png';
-import jissekiYuuniJpg from '../images/jisseki-yuuni.jpg';
+import img1 from '../images/portImg1.png';
+import img2 from '../images/portImg2.png';
+import img3 from '../images/portImg3.png';
+import img4 from '../images/portImg4.png';
+import img5 from '../images/portImg5.png';
+import img6 from '../images/portImg6.png';
 import { rhythm } from '../utils/typography';
 
 const PerformanceSection = () => {
   const performances = [
     {
-      name: 'Portfolio Rebalancer',
+      name: 'Perfect Pet App',
       description:
-        'ポートフォリオのリバランスを簡単に行えるようにすることで、資産運用を支援するツールです。',
+        'This tinder style app that helps get dogs in local shelters adopted. You swipe right to save a dog and then can go to your saved dogs and view more info about them and even message the shelter. ',
       techStack: [
-        { name: 'Vue.js/Vuex', description: 'UI/State管理' },
-        { name: 'Nuxt.js', description: 'Vue.jsフレームワーク' },
-        { name: 'Bulma', description: 'CSSライブラリ' },
-        { name: 'Firebase Auth', description: '認証管理' },
-        { name: 'Firebase Firestore', description: 'データベース' },
+        { name: 'React-Native' },
+        { name: 'Redux' },
+        { name: 'REST' },
       ],
-      webpageURL: 'http://rebalancer.yuuniworks.com',
-      githubURL: 'https://github.com/junkboy0315/rebalancer',
-      imgPath: jissekiRebalancer,
+      webpageURL: 'https://github.com/TannerSeramur/pet-finder',
+      githubURL: 'https://github.com/TannerSeramur/pet-finder',
+      imgPath: img1,
     },
     {
-      name: 'Travelr',
+      name: 'Secret Santa Helper',
       description:
-        '古い写真と新しい写真を比較して楽しむ写真投稿サービスです。デモ用に作成したものです。',
+        'Inspired by the holidays, and my familys struggle to figure out how to draw names anonymously from different locations for our annual Secret Santa. I built a little app using react and node.js to help us.',
       techStack: [
-        { name: 'React/Redux', description: 'UI/State管理' },
-        { name: 'redux-observable', description: 'reduxミドルウェア' },
-        { name: 'material-ui', description: 'UIライブラリ' },
-        { name: 'Workbox', description: 'PWA対応' },
-        { name: 'jest/enzyme', description: 'テスト' },
-        { name: 'Typescript', description: '型付け' },
-        { name: 'Firebase', description: '認証管理及びストレージ' },
-        { name: 'GraphQL', description: '問い合わせ言語' },
-        { name: 'Node.js', description: 'APIサーバ' },
-        { name: 'PostgreSQL/PostGIS', description: 'データベース' },
-        { name: 'Kubernetes', description: 'コンテナ管理' },
+        { name: 'React' },
+        { name: 'Node.js' },
+        { name: 'Express' },
+        { name: 'NodeMailer' },
       ],
-      webpageURL: 'http://travelr.yuuniworks.com',
-      githubURL: 'https://github.com/junkboy0315/travelr',
-      blogPath: '/blog/2018-07-31-デモシステムを作成しました/',
-      imgPath: jissekiTravelrPng,
+      webpageURL: 'https://secretsantahelper.herokuapp.com/',
+      githubURL: 'https://github.com/TannerSeramur/secret-santa',
+      imgPath: img2,
     },
     {
-      name: 'react-compare-image',
+      name: 'Basic CMS',
       description:
-        'スライダを使って画像を比較するためのReactコンポーネントです。しばしば海外からのPRがあります。',
-      techStack: [{ name: 'React', description: 'UI' }],
-      webpageURL: 'https://www.npmjs.com/package/react-compare-image',
-      githubURL: 'https://github.com/junkboy0315/react-compare-image',
-      imgPath: jissekiCompare,
+        'User Auth using login & password pairs such as admin : ADMIN, editor : EDITOR, and user : USER to login to site and gives different privileges based off role.',
+      techStack: [
+        { name: 'React' },
+        { name: 'Redux' },
+        { name: 'AWS' },
+        { name: 'JWT' },
+      ],
+      webpageURL: 'http://ts-basic-cms.s3-website-us-west-2.amazonaws.com/',
+      githubURL: 'https://github.com/TannerSeramur/35-project-cms',
+      imgPath: img3,
     },
     {
-      name: 'SplitBills',
+      name: 'cf-quick-start',
       description:
-        '酔っぱらった状態で納得のいく割勘計算を行うための小道具です。',
+        'Open source project I started for Code Fellows that quick starts a variety of projects including templates for api, sockets server, express server, and react app.',
       techStack: [
-        { name: 'Angular6', description: 'Front-end Framework' },
-        { name: 'Netlify', description: 'ホスティング' },
-        { name: 'Jasmine', description: 'Unit/E2E Test' },
-        { name: 'Protractor', description: 'E2E Test' },
-        { name: 'Semaphore', description: 'CI/CD' },
-        { name: 'Service Worker', description: 'オフライン対応' },
+        { name: 'node' },
+        { name: 'NPM package' },
+        { name: 'Github API' },
+        { name: 'Symlink' },
       ],
-      webpageURL: 'https://split.yuuniworks.com',
-      githubURL: 'https://github.com/junkboy0315/splitbills',
-      imgPath: jissekiWarikanPng,
+      webpageURL: 'https://www.npmjs.com/package/cf-quick-start',
+      githubURL: 'https://github.com/TannerSeramur/cf-quick-start',
+      imgPath: img4,
     },
     {
-      name: 'Yuuniworks Web',
-      description: 'Gatsbyを使って作成した、当方の事業広報用Webページです。',
+      name: 'Halfway',
+      description:
+        'Mobile site for find a place to meet up halfway between two people',
       techStack: [
-        { name: 'Gatsby', description: 'Static Site Generator' },
-        { name: 'GraphQL', description: 'クエリ言語' },
-        {
-          name: 'AWS API Gateway',
-          description: '問い合わせフォーム用バックエンド',
-        },
-        { name: 'AWS Lambda', description: '問い合わせフォーム用バックエンド' },
-        { name: 'AWS SES', description: '問い合わせフォーム用バックエンド' },
-        { name: 'Netlify', description: 'ホスティング、CI/CD' },
-        { name: 'Netlify CMS', description: 'CMS' },
-        { name: 'Sentry', description: 'クライアントサイドのエラー収集' },
+        { name: 'JavaScript' },
+        { name: 'node.js' },
+        { name: 'EJS' },
+        { name: 'Postquesql' },
       ],
-      webpageURL: 'https://www.yuuniworks.com',
-      githubURL: 'https://github.com/junkboy0315/yuuni-web',
-      blogPath: '/blog/2018-04-09-jamstackなwebサイトの作成/',
-      imgPath: jissekiYuuniJpg,
+      webpageURL: 'https://github.com/TannerSeramur/301-final-halfwaythere',
+      githubURL: 'https://github.com/TannerSeramur/301-final-halfwaythere',
+      imgPath: img5,
     },
     {
-      name: 'Yuuniworks Notes',
+      name: 'Basic Sockets ChatRoom',
       description:
-        'VuePressで作成したドキュメントサイトです。Algoliaによる全文検索を実装しています。',
+        'Basic chat room that allows multiple users to connect to and chat',
       techStack: [
-        { name: 'VuePress', description: 'Static Site Generator' },
-        { name: 'Algolia DocSearch', description: '高度な全文検索' },
+        { name: 'JavaScript' },
+        { name: 'sockets.io' },
+        { name: 'SASS' },
       ],
-      webpageURL: 'https://note.yuuniworks.com',
-      githubURL: 'https://github.com/junkboy0315/markdown-notes',
-      imgPath: jissekiNote,
+      webpageURL: 'https://l55ml6w809.codesandbox.io/',
+      githubURL: 'https://github.com/TannerSeramur/Code-38-Socket.io-backend',
+      imgPath: img6,
     },
   ];
 
@@ -169,7 +156,7 @@ const PerformanceSection = () => {
 
   return (
     <SectionContainer id="performance">
-      <SectionHeader text="実績" colorNumber="1" />
+      <SectionHeader text="Portfolio" colorNumber="1" />
 
       {/* グリッド始点 */}
       <div css={styles.grid}>
@@ -181,6 +168,7 @@ const PerformanceSection = () => {
               rel="noopener noreferrer"
             >
               <img
+                style={{ objectFit: 'contain', border: 'none' }}
                 src={performance.imgPath}
                 css={styles.itemImage}
                 alt={performance.name}
@@ -206,7 +194,7 @@ const PerformanceSection = () => {
                 rel="noopener noreferrer"
                 css={styles.externalLink}
               >
-                ソースコード
+                Source Code
               </a>
             ) : (
               <div style={{ color: 'transparent' }}>_</div>
@@ -242,7 +230,6 @@ const PerformanceSection = () => {
           </WhiteBox>
         ))}
       </div>
-      {/* グリッド終点 */}
     </SectionContainer>
   );
 };

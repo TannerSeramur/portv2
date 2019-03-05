@@ -20,6 +20,7 @@ const TopSection = () => {
     logo: {
       width: '450px',
       maxWidth: '80%',
+      fontSize: 60,
     },
     description: {
       color: '#fff',
@@ -36,21 +37,14 @@ const TopSection = () => {
   };
 
   return (
-    <section id="top" css={styles.container}>
+    <section id="top" css={styles.container} style={{ paddingBottom: 400 }}>
       <h1 css={styles.logo}>
-        <img src={logoSvg} alt="Yuuniworksのロゴ" />
+        seramur.dev
+        {/* <img src={logoSvg} alt="Yuuniworksのロゴ" /> */}
       </h1>
       <div css={styles.description}>
-        田村翔太と申します。<br />
-        <a
-          href="https://goo.gl/maps/HjyoY7NJ9j92"
-          css={{ color: 'white' }}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          島根県浜田市<IconExtLink color="#fff" />
-        </a>を拠点に活動する<br />
-        フルスタックエンジニアです。
+        <h3>Hello my name is Tanner.</h3>
+        <h3>I am a Seattle based full stack engineer</h3>
       </div>
       <LinkForScroll
         to="gaiyou"

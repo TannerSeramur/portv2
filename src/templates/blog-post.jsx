@@ -183,7 +183,7 @@ export default function BlogPost(props) {
               icon="arrow-left"
               style={styles.backButton.arrow}
             />
-            記事一覧に戻る
+            HII
           </Link>
 
           <WhiteBox>
@@ -208,7 +208,7 @@ export default function BlogPost(props) {
               <div>
                 <p>田村 翔太</p>
                 <p>
-                  <Link to="/">Yuuniworks</Link>
+                  <Link to="/">hello</Link>
                   代表。島根県浜田市を拠点に活動するフルスタックエンジニアです。Python/Node.js/GoによるAPIの開発、React/Vue.js等によるSPAの開発などを行っています。
                 </p>
               </div>

@@ -56,78 +56,77 @@ const SkillSection = props => {
   };
 
   const skills = {
-    フロントエンド: {
-      'JavaScript / Typescript': 3,
-      'React / Redux': 3,
-      'Vue.js / Vuex': 3,
+    front: {
+      JavaScript: 3,
+      'React / React-Native': 3,
+      Redux: 3,
+      'Flexbox / CSS Grid': 3,
+      Jquery: 3,
       'Jest/Enzyme': 3,
       'Material-UI': 3,
-      'PWA / Workbox': 2,
+      SASS: 3,
+      Bootstrap: 3,
+      Webpack: 2,
+      'Handlebars.js': 2,
       'Nuxt.js / Hugo / Gatsby': 2,
-      GraphQL: 1,
-      RxJS: 1,
+      GraphQL: 2,
+      Anguler: 1,
+      Vue: 1,
     },
-    バックエンド: {
-      Docker: 3,
-      'Python / Django': 2,
-      Go: 2,
-      'Node.js': 2,
-      'PHP / Laravel': 2,
-      RDBMS: 2,
-      GCP: 2,
+    backend: {
+      'Node.js': 3,
+      'Express.js': 3,
+      SQL: 3,
+      Postgresql: 3,
+      Mysql: 2,
+      noSQL: 3,
+      mongoDB: 3,
       Firebase: 2,
-      Kubernetes: 2,
+      REST: 3,
+      graphQL: 2,
+      Heroku: 3,
+      gulp: 2,
+      php: 2,
+      aws: 2,
     },
-    その他: [
-      {
-        title: 'スキルテスト',
-        content: (
-          <div>
-            Paizaコーディング{' '}
-            <a
-              href="https://paiza.jp/guide/career#rank"
-              css={styles.link}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Aランク<IconExtLink />
-            </a>
-          </div>
-        ),
-      },
-      {
-        title: 'スキル習得方法',
-        content: (
-          <div
-            onClick={() => props.setCurrentModal('UDEMY')}
-            onKeyDown={e => {
-              if (e.keyCode === 13) props.setCurrentModal('UDEMY');
-            }}
-            role="button"
-            tabIndex={0}
-          >
-            Udemy（<span css={styles.link}>習得済みコース一覧</span>）
-          </div>
-        ),
-      },
-      {
-        title: '言語',
-        content: <div>日本語、英語</div>,
-      },
-      {
-        title: '好きなツール',
-        content: 'VSCode、HHKB Pro2',
-      },
-    ],
+    design: {
+      Photoshop: 3,
+      Illustrator: 2,
+      Sketch: 2,
+      'Adobe XD': 2,
+      'Cinima 4d': 2,
+      git: 3,
+      Github: 3,
+      Typescript: 2,
+      TDD: 2,
+      EDD: 2,
+      'NPM / Yarn': 3,
+      'Unix ES6': 3,
+      'Server & Client side rendering': 3,
+      Travis: 2,
+      'Mocha & Chai': 2,
+    },
+    other: {
+      git: 3,
+      Github: 3,
+      Typescript: 2,
+      TDD: 2,
+      EDD: 2,
+      'NPM / Yarn': 3,
+      'Unix ES6': 3,
+      'Server & Client side rendering': 3,
+      Travis: 2,
+      'Mocha & Chai': 2,
+    },
   };
 
   return (
     <SectionContainer id="skill" colorNumber="2" skew>
-      <SectionHeader text="スキル" colorNumber="2" />
+      <SectionHeader text="Skills" colorNumber="2" />
       <div css={styles.grid}>
         <WhiteBox css={styles.whiteBox}>
           <div>
-            <h3>フロントエンド関連</h3>
+            <h3>Front-End</h3>
             <div
               css={styles.helpButton}
               onClick={() => props.setCurrentModal('SKILL_HELP')}
@@ -139,10 +138,10 @@ const SkillSection = props => {
             >
               <img src={questionSvg} alt="hint button" />
             </div>
-            {Object.keys(skills['フロントエンド']).map(skill => (
+            {Object.keys(skills.front).map(skill => (
               <Skill
                 skillName={skill}
-                skillLevel={skills['フロントエンド'][skill]}
+                // skillLevel={skills.front[skill]}
                 key={skill}
               />
             ))}
@@ -151,11 +150,11 @@ const SkillSection = props => {
 
         <WhiteBox css={styles.whiteBox}>
           <div>
-            <h3>バックエンド関連</h3>
-            {Object.keys(skills['バックエンド']).map(skill => (
+            <h3>Back-End</h3>
+            {Object.keys(skills.backend).map(skill => (
               <Skill
                 skillName={skill}
-                skillLevel={skills['バックエンド'][skill]}
+                // skillLevel={skills.backend[skill]}
                 key={skill}
               />
             ))}
@@ -164,23 +163,29 @@ const SkillSection = props => {
 
         <WhiteBox css={styles.whiteBox}>
           <div>
-            <h3>その他</h3>
-            <ul>
-              {skills['その他'].map(item => (
-                <li css={styles.sonotaListItem} key={item.title}>
-                  <div css={styles.sonotaTitle}>
-                    <FontAwesomeIcon
-                      icon="caret-square-right"
-                      style={styles.caret}
-                    />
-                    {item.title}
-                  </div>
-                  <div css={styles.sonotaContent}>{item.content}</div>
-                </li>
-              ))}
-            </ul>
+            <h3>Design / Other</h3>
+            {Object.keys(skills.design).map(skill => (
+              <Skill
+                skillName={skill}
+                // skillLevel={skills.design[skill]}
+                key={skill}
+              />
+            ))}
           </div>
         </WhiteBox>
+
+        {/* <WhiteBox css={styles.whiteBox}>
+          <div>
+            <h3>Other</h3>
+            {Object.keys(skills.other).map(skill => (
+              <Skill
+                skillName={skill}
+                // skillLevel={skills.other[skill]}
+                key={skill}
+              />
+            ))}
+          </div>
+        </WhiteBox> */}
       </div>
     </SectionContainer>
   );

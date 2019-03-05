@@ -5,24 +5,25 @@ import SectionContainer from '../components/SectionContainer';
 import SectionHeader from '../components/SectionHeader';
 import WhiteBox from '../components/WhiteBox';
 import { rhythm } from '../utils/typography';
+import Link from 'gatsby-link';
 
 const GaiyouSection = props => {
   const articles = [
     [
-      '何ができる？',
-      'Python/Node.js/GoによるAPIの開発、React/Vue.js等によるSPAの開発などを行っています。<br /><br /><a href="https://github.com/junkboy0315/" target="_blank">Githubアカウントはこちら</a>',
+      'What I do?',
+      'Developing APIs, SPAs, Databases, & Mobile Apps with a variety of javascript technologys. <br /><br /><a href="https://github.com/TannerSeramur" target="_blank">My Github</a>',
     ],
     [
-      '契約形態は？',
-      '準委任契約(時間単価4,000円～)によるリソースの提供が可能です。開発内容によっては、請負契約も可能です。',
+      'What I want?',
+      'My goal is to strengthen my software development skills by working in an environment that is just as creative as my front end skills. I have a strong work ethic and am confident in my ability to grow within a company that is ready to grow with me.',
     ],
     [
-      '常駐できる？',
-      'フルリモートワークを前提とさせて頂いておりますが、遠方での打ち合わせ等にも柔軟に対応いたします。',
+      'Can you stay resident?',
+      'Although I am currently pursuing a career in the greater Seattle area I am open to relocating depending of the opportunity.',
     ],
     [
-      'いま仕事できる？',
-      '内容・期間によっては受託可能です。お気軽にお問い合わせください。',
+      'Can you work now?',
+      'I am always looking for new projects to work on, feel free to reach out',
     ],
   ];
 
@@ -68,7 +69,7 @@ const GaiyouSection = props => {
 
   return (
     <SectionContainer id="gaiyou">
-      <SectionHeader text="概要" colorNumber="1" />
+      <SectionHeader text="Overview" colorNumber="1" />
 
       <WhiteBox css={styles.container}>
         {articles.map(article => (
@@ -83,11 +84,8 @@ const GaiyouSection = props => {
         ))}
       </WhiteBox>
 
-      <button
-        css={styles.button}
-        onClick={() => props.setCurrentModal('CONTACT')}
-      >
-        お問い合わせ
+      <button css={styles.button}>
+        <Link to="/#contact">Contact</Link>
       </button>
     </SectionContainer>
   );

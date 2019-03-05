@@ -12,29 +12,19 @@ import { rhythm } from '../utils/typography';
 const FooterSection = props => {
   const footerInfo = [
     {
-      imgPath: svgForm,
-      description: 'フォームでのお問い合わせ',
-      onClick: () => props.setCurrentModal('CONTACT'),
-    },
-    {
       imgPath: svgMail,
-      description: 'info@yuuniworks.com',
-      link: 'mailto:info@yuuniworks.com',
+      description: 'seramurt@gmail.com',
+      link: 'mailto:seramurt@gmail.com',
     },
     {
       imgPath: svgGithub,
-      description: 'github.com/junkboy0315',
-      link: 'https://github.com/junkboy0315/',
+      description: 'github.com/TannerSeramur',
+      link: 'https://github.com/TannerSeramur/',
     },
     {
       imgPath: svgPhone,
-      description: '070 4398 9424',
-      link: 'tel:07043989424',
-    },
-    {
-      imgPath: svgPin,
-      description: '島根県浜田市金城町七条',
-      link: 'https://goo.gl/maps/V5G3DJSYy8u',
+      description: '206 200 4908',
+      link: 'tel:12062004908',
     },
   ];
 
@@ -70,7 +60,7 @@ const FooterSection = props => {
 
   return (
     <SectionContainer id="contact" colorNumber="2" skew skewFillBottom>
-      <SectionHeader text="お問い合わせ・ご連絡先" colorNumber="2" />
+      <SectionHeader text="Inquiries・Contact" colorNumber="2" />
 
       <div css={styles.container}>
         {footerInfo.map(info => (

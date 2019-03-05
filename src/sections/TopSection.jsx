@@ -20,7 +20,7 @@ const TopSection = () => {
     logo: {
       width: '450px',
       maxWidth: '80%',
-      fontSize: 60,
+      fontSize: 50,
     },
     description: {
       color: '#fff',

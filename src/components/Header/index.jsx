@@ -197,7 +197,6 @@ class Header extends React.Component {
       <nav css={styles.navbar}>
         {isRootPath ? (
           <LinkForScroll to="top" smooth duration={150} css={styles.logo}>
-            {/* <img src={logoSvg} alt="Yuuniworksのロゴ" /> */}
             <h2 style={styles.logo}>seramur.dev</h2>
           </LinkForScroll>
         ) : (

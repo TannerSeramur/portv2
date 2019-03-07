@@ -11,6 +11,8 @@ import img3 from '../images/portImg3.png';
 import img4 from '../images/portImg4.png';
 import img5 from '../images/portImg5.png';
 import img6 from '../images/portImg6.png';
+import img7 from '../images/portImg7.png';
+import img8 from '../images/portImg8.png';
 import { rhythm } from '../utils/typography';
 
 const PerformanceSection = () => {
@@ -96,6 +98,30 @@ const PerformanceSection = () => {
       webpageURL: 'https://l55ml6w809.codesandbox.io/',
       githubURL: 'https://github.com/TannerSeramur/Code-38-Socket.io-backend',
       imgPath: img6,
+    },
+    {
+      name: 'NSBA Site',
+      description: 'Static Mock-Up for North Shore Business aliance ',
+      techStack: [{ name: 'HTML 5' }, { name: 'CSS' }, { name: 'Jquery' }],
+      webpageURL: 'https://tannerseramur.github.io/NSBAsite/',
+      githubURL: 'https://github.com/TannerSeramur/NSBAsite',
+      imgPath: img7,
+    },
+    {
+      name: 'Bazaar Fellows E-Commerce Store Template',
+      description:
+        'E-Commerce store template I built with a team for a 4-day school Project, uses gatsby to improve SEO and has a intuitive CMS system for users',
+      techStack: [
+        { name: 'React' },
+        { name: 'Gatsby' },
+        { name: 'GraphQL' },
+        { name: 'Redux' },
+        { name: 'PayPal API' },
+        { name: 'MongoDB' },
+      ],
+      webpageURL: 'https://github.com/bazaar-fellows',
+      githubURL: 'https://github.com/bazaar-fellows',
+      imgPath: img8,
     },
   ];
 

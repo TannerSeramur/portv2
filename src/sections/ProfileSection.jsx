@@ -152,7 +152,7 @@ const ProfileSection = () => {
 
           <div css={styles.gaiyouListItem}>
             <div css={styles.gaiyouItemName}>
-              <b>Hobby's:</b>
+              <b>Hobbies:</b>
             </div>
             <div css={styles.gaiyouItemContent}>
               Lacrosse

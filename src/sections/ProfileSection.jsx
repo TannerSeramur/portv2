@@ -199,19 +199,6 @@ const ProfileSection = () => {
             Studied the ins and outs of javascript, and learned the industries
             standard tools, frameworks, and processes in development.
           </p>
-
-          <Hr />
-
-          <p>
-            <b>Batteries Plus, Bozeman - Sales Associate</b>
-            <br />
-            <span css={styles.keirekiGray}>(09/15 - 05/16)</span>
-          </p>
-          <p>
-            Gained customer service skills in a very useful field. Learned about
-            different markets and how they apply to the market of customers we
-            were assisting.
-          </p>
         </WhiteBox>
         {/* <WhiteBox css={{ ...styles.whiteBox, ...styles.whiteBoxKeireki }}>
           <h3 css={styles.h3}>

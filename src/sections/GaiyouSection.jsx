@@ -11,7 +11,7 @@ const GaiyouSection = props => {
   const articles = [
     [
       'What I do?',
-      'Developing APIs, SPAs, Databases, & Mobile Apps with a variety of javascript technologys. <br /><br /><a href="https://github.com/TannerSeramur" target="_blank">My Github</a>',
+      'Developing APIs, SPAs, Databases, & Mobile Apps with a variety of javascript technologies. <br /><br /><a href="https://github.com/TannerSeramur" target="_blank">My Github</a>',
     ],
     [
       'What I want?',

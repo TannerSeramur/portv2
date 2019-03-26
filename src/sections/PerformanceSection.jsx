@@ -13,10 +13,26 @@ import img5 from '../images/portImg5.png';
 import img6 from '../images/portImg6.png';
 import img7 from '../images/portImg7.png';
 import img8 from '../images/portImg8.png';
+import img9 from '../images/portImg9.png';
 import { rhythm } from '../utils/typography';
 
 const PerformanceSection = () => {
   const performances = [
+    {
+      name: 'SportsDB',
+      description:
+        'Statistics platform for sports league, manages team & player registration, player statistics, league schedule, league news, and standings',
+      techStack: [
+        { name: 'React' },
+        { name: 'Redux' },
+        { name: 'REST' },
+        { name: 'Postgresql' },
+        { name: 'Stripe' },
+      ],
+      webpageURL: 'https://github.com/keithj0nes/hockeydb',
+      githubURL: 'https://github.com/keithj0nes/hockeydb',
+      imgPath: img9,
+    },
     {
       name: 'Perfect Pet App',
       description:

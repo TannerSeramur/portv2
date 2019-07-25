@@ -168,13 +168,36 @@ const ProfileSection = () => {
 
         <WhiteBox css={{ ...styles.whiteBox, ...styles.whiteBoxKeireki }}>
           <h3 css={styles.h3}>EXPERIENCE</h3>
+          <Hr />
+          <p>
+            <b>Talentree - Software Developer</b>
+            <br />
+            <span css={styles.keirekiGray}>(1/19 - )</span>
+          </p>
+          <p>
+            Developing a social networking platform. Stack primarily consists of
+            React, Express, Apollo, GraphQL, Neo4j, and AWS. Leading front-end
+            development in charge of working with designers to build out a
+            functional UI. Working in all aspects of the platform both front and
+            back end.
+          </p>
+          <Hr />
+          <p>
+            <b>Genie Lift - Software Developer</b>
+            <br />
+            <span css={styles.keirekiGray}>(6/19 - 7/19 )</span>
+          </p>
+          <p>
+            1 month contracted job Working with Box API developing scripts to
+            automate cloud storage for all Genie products and parts.
+          </p>
 
           <Hr />
 
           <p>
             <b>Creative Coding, Seattle - Teacher</b>
             <br />
-            <span css={styles.keirekiGray}>(12/17 - )</span>
+            <span css={styles.keirekiGray}>(12/17 - 12/18)</span>
           </p>
           <p>
             Teaching students ages 7-13 how to program using a visual
